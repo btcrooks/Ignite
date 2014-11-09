@@ -5,11 +5,11 @@ This is a tiny shell script that sets preferences for VIM, and aliases for BASH 
 
 VIM
 ---
->Syntax highlighting.
->Tab Size = 2.
+>Syntax highlighting.  
+>Tab Size = 2.  
 
 Bash & ZSH
 ----------
->Shortcuts to start and stop MAMP.
->**mamp-serve**
->**mamp-stop**
+>Shortcuts to start and stop MAMP.  
+>**mamp-serve**  
+>**mamp-stop**  
