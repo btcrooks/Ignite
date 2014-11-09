@@ -1,11 +1,13 @@
 #!/bin/sh
 #Author: Brandon Crooks
-#Description: A shell script that sets preferences for VIM, and aliases for BASH and ZSH. 
-#----------------lib---------------------
-red='\033[0;31m'
-green='\033[0;32m'
-NC='\033[0m'
+#Description: A shell script that sets preferences
+# for VIM, and aliases for BASH and ZSH. 
+#----------Color lib---------------------
+yellow="\033[0;33m"
+green="\033[0;32m"
+nc="\033[0m"
 #----------------------------------------
+
 # Setup file paths
 Bash_Profile="$HOME/.bash_profile"
 ZSHRC="$HOME/.zshrc"
@@ -22,7 +24,7 @@ $MAMPSERVE
 $MAMPSTOP
 $TESTING 
 END
-echo bash shortcuts ready...
+echo -e "${yellow}bash shortcuts ready..."
  
 # Add shortcuts to .zshrc
 /bin/cat <<END > $ZSHRC
@@ -30,7 +32,7 @@ $MAMPSERVE
 $MAMPSTOP
 $TESTING 
 END
-echo zsh shortcuts ready..
+echo -e "${yellow}zsh shortcuts ready..."
  
 # Setup VIM defaults
 /bin/cat <<END > $VIMRC
@@ -39,7 +41,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 END
-echo Vim presets set...
+echo -e "${yellow}Vim presets set..."
  
 # Let us know when your done
-echo I\'m all done!
+echo -e "${green}I'm all done!${nc}"
