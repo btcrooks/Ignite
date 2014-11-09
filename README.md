@@ -3,11 +3,11 @@ Ignite
 
 This is a tiny shell script that sets preferences for VIM, and aliases for BASH and ZSH.
 
-##VIM
+####VIM
 Syntax highlighting
 Tab Size = 2
 
-##Bash & ZSH
+####Bash & ZSH
 Shortcuts to start and stop MAMP.
 **mamp-serve**
 **mamp-stop**
