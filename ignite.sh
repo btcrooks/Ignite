@@ -19,7 +19,7 @@ MAMPSTOP='mamp-stop="/Applications/MAMP/bin/stop.sh"'
 TESTING='alias marco="echo Polo"'
 
 # Add shortcuts to .bash_profile
-/bin/cat <<END > $Bash_Profile
+/bin/cat <<END >> $Bash_Profile
 $MAMPSERVE
 $MAMPSTOP
 $TESTING 
@@ -27,7 +27,7 @@ END
 echo -e "${yellow}bash shortcuts ready..."
  
 # Add shortcuts to .zshrc
-/bin/cat <<END > $ZSHRC
+/bin/cat <<END >> $ZSHRC
 $MAMPSERVE
 $MAMPSTOP
 $TESTING 
@@ -35,7 +35,7 @@ END
 echo -e "${yellow}zsh shortcuts ready..."
  
 # Setup VIM defaults
-/bin/cat <<END > $VIMRC
+/bin/cat <<END >> $VIMRC
 syntax on
 set tabstop=2
 set shiftwidth=2
