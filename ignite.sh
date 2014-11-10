@@ -15,7 +15,7 @@ VIMRC="$HOME/.vimrc"
 
 #Setup alias variables
 MAMPSERVE='alias mamp-serve="/Applications/MAMP/bin/start.sh"'
-MAMPSTOP='mamp-stop="/Applications/MAMP/bin/stop.sh"'
+MAMPSTOP='alias mamp-stop="/Applications/MAMP/bin/stop.sh"'
 TESTING='alias marco="echo Polo"'
 
 # Add shortcuts to .bash_profile
