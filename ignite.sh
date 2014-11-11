@@ -7,7 +7,6 @@ yellow="\033[0;33m"
 green="\033[0;32m"
 nc="\033[0m"
 #----------------------------------------
-
 # Setup file paths
 Bash_Profile="$HOME/.bash_profile"
 ZSHRC="$HOME/.zshrc"
@@ -24,7 +23,7 @@ $MAMPSERVE
 $MAMPSTOP
 $TESTING 
 END
-echo -e "${yellow}bash shortcuts ready..."
+echo "${yellow}bash shortcuts ready..."
  
 # Add shortcuts to .zshrc
 /bin/cat <<END >> $ZSHRC
@@ -32,7 +31,7 @@ $MAMPSERVE
 $MAMPSTOP
 $TESTING 
 END
-echo -e "${yellow}zsh shortcuts ready..."
+echo "${yellow}zsh shortcuts ready..."
  
 # Setup VIM defaults
 /bin/cat <<END >> $VIMRC
@@ -41,7 +40,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 END
-echo -e "${yellow}Vim presets set..."
+echo "${yellow}Vim presets set..."
  
 # Let us know when your done
-echo -e "${green}I'm all done!${nc}"
+echo "${green}I'm all done!${nc}"
