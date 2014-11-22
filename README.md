@@ -13,5 +13,5 @@ This is a tiny shell script that sets preferences for VIM, and aliases for BASH 
 >**mamp-stop**  
 
 MAMP Links  
-Port: **8888 **   
+Port: **8888**  
 MAMP Home: **127.0.0.1:8888/MAMP/**
