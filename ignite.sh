@@ -50,4 +50,3 @@ echo "${yellow}Vim presets set..."
 echo "${green}I'm all done!${nc}"
 # Refresh bash
 . ~/.bash_profile
-exit 0
