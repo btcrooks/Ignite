@@ -16,8 +16,7 @@ VIMRC="$HOME/.vimrc"
 MAMPSERVE='alias mamp-serve="/Applications/MAMP/bin/start.sh"'
 MAMPSTOP='alias mamp-stop="/Applications/MAMP/bin/stop.sh"'
 TESTING='alias marco="echo Polo"'
-KILLDS_STORE='alias killds_store="find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch"'
-HELP='alias ignite help'
+##KILLDS_STORE='alias killds_store="find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch"'
 
 # Add shortcuts to .bash_profile
 /bin/cat <<END >> $Bash_Profile
