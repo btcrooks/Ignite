@@ -12,19 +12,19 @@ Bash_Profile="$HOME/.bash_profile"
 ZSHRC="$HOME/.zshrc"
 VIMRC="$HOME/.vimrc"
 
-#Setup alias variables
+# Setup alias variables
 MAMPSERVE='alias mamp-serve="/Applications/MAMP/bin/start.sh"'
 MAMPSTOP='alias mamp-stop="/Applications/MAMP/bin/stop.sh"'
 TESTING='alias marco="echo Polo"'
 KILLDS_STORE='alias killds_store="find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch"'
-HELP='alias ignite help'
+#HELP='alias ignite help'
 
 # Add shortcuts to .bash_profile
 /bin/cat <<END >> $Bash_Profile
 $MAMPSERVE
 $MAMPSTOP
 $TESTING 
-$KILLDS_STORE
+#$KILLDS_STORE
 END
 echo "${yellow}bash shortcuts ready..."
  
@@ -33,7 +33,7 @@ echo "${yellow}bash shortcuts ready..."
 $MAMPSERVE
 $MAMPSTOP
 $TESTING 
-$KILLDS_STORE
+#$KILLDS_STORE
 END
 echo "${yellow}zsh shortcuts ready..."
  
@@ -43,6 +43,8 @@ syntax on
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set relativenumber
+set number
 END
 echo "${yellow}Vim presets set..."
  
