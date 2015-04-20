@@ -40,9 +40,7 @@ echo "${yellow}zsh shortcuts ready..."
 # Setup VIM defaults
 /bin/cat <<END >> $VIMRC
 syntax on
-set tabstop=2
-set shiftwidth=2
-set expandtab
+set tabstop=2 shiftwidth=2 expandtab
 set relativenumber
 set number
 END
