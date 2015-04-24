@@ -42,12 +42,12 @@ echo "${yellow}zsh shortcuts ready..."
 syntax on
 set tabstop=2 shiftwidth=2 expandtab
 set relativenumber
-set number
 END
 echo "${yellow}Vim presets set..."
  
 # Let us know when your done
 echo "${green}I'm all done!${nc}"
 # Refresh bash
-. ~/.bash_profile
+sleep 1
+source ~/.bash_profile
 exit 0
