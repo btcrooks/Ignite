@@ -20,29 +20,30 @@ KILLDS_STORE='alias killds_store="find . -name .DS_Store -print0 | xargs -0 git 
 #HELP='alias ignite help'
 
 # Add shortcuts to .bash_profile
-/bin/cat <<END >> $Bash_Profile
+/bin/cat <<EOF >> $Bash_Profile
 $MAMPSERVE
 $MAMPSTOP
 $TESTING 
 #$KILLDS_STORE
-END
+EOF
 echo "${yellow}bash shortcuts ready..."
  
 # Add shortcuts to .zshrc
-/bin/cat <<END >> $ZSHRC
+/bin/cat <<EOF >> $ZSHRC
 $MAMPSERVE
 $MAMPSTOP
 $TESTING 
 #$KILLDS_STORE
-END
+EOF
 echo "${yellow}zsh shortcuts ready..."
  
 # Setup VIM defaults
-/bin/cat <<END >> $VIMRC
+/bin/cat <<EOF >> $VIMRC
 syntax on
 set tabstop=2 shiftwidth=2 expandtab
 set relativenumber
-END
+set omnifunc=javascriptcomplete#CompleteJS
+EOF
 echo "${yellow}Vim presets set..."
  
 # Let us know when your done
