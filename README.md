@@ -3,8 +3,8 @@ Ignite
 
 This is a tiny shell script that sets preferences for VIM, and aliases for BASH and ZSH.
 
-IM
-==
+VIM
+===
 >Syntax highlighting.  
 >Tab Size = 2.  
 
