@@ -17,6 +17,7 @@ MAMPSERVE='alias mamp-serve="/Applications/MAMP/bin/start.sh"'
 MAMPSTOP='alias mamp-stop="/Applications/MAMP/bin/stop.sh"'
 TESTING='alias marco="echo Polo"'
 KILLDS_STORE='alias killds_store="find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch"'
+TREE='alias tree='find . -type d | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/|-\1/" | less''
 #HELP='alias ignite help'
 
 # Add shortcuts to .bash_profile
@@ -24,7 +25,8 @@ KILLDS_STORE='alias killds_store="find . -name .DS_Store -print0 | xargs -0 git 
 $MAMPSERVE
 $MAMPSTOP
 $TESTING 
-#$KILLDS_STORE
+$KILLDS_STORE
+$TREE
 EOF
 echo "${yellow}bash shortcuts ready..."
  
@@ -34,6 +36,7 @@ $MAMPSERVE
 $MAMPSTOP
 $TESTING 
 #$KILLDS_STORE
+#TREE
 EOF
 echo "${yellow}zsh shortcuts ready..."
  
