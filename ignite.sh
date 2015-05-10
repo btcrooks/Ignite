@@ -13,12 +13,10 @@ ZSHRC="$HOME/.zshrc"
 VIMRC="$HOME/.vimrc"
 
 # Setup alias variables
-MAMPSERVE='alias mamp-serve="/Applications/MAMP/bin/start.sh"'
+MAMPSERVE='alias mamp-serve="/Applications/MAMP/bin/start.sh" && echo"Starting Server: 127.0.0.1:8888/MAMP/"'
 MAMPSTOP='alias mamp-stop="/Applications/MAMP/bin/stop.sh"'
 TESTING='alias marco="echo Polo"'
 KILLDS_STORE='alias killds_store="find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch"'
-TREE='alias tree='find . -type d | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/|-\1/" | less''
-#HELP='alias ignite help'
 
 # Add shortcuts to .bash_profile
 /bin/cat <<EOF >> $Bash_Profile
@@ -35,23 +33,30 @@ echo "${yellow}bash shortcuts ready..."
 $MAMPSERVE
 $MAMPSTOP
 $TESTING 
-#$KILLDS_STORE
-#TREE
+$KILLDS_STORE
+$TREE
 EOF
 echo "${yellow}zsh shortcuts ready..."
  
 # Setup VIM defaults
 /bin/cat <<EOF >> $VIMRC
 syntax on
-set tabstop=2 shiftwidth=2 expandtab
+set numberwidth=2
+set tabstop=2 
+set shiftwidth=2 
+set expandtab
+set softtabstop=2
+set shiftround
+set autoindent
 set relativenumber
 set omnifunc=javascriptcomplete#CompleteJS
 EOF
 echo "${yellow}Vim presets set..."
  
-# Let us know when your done
-echo "${green}I'm all done!${nc}"
 # Refresh bash
 sleep 1
 source ~/.bash_profile
+
+# Let us know when your done
+echo "${green}I'm all done!${nc}"
 exit 0
