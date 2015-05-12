@@ -13,7 +13,7 @@ ZSHRC="$HOME/.zshrc"
 VIMRC="$HOME/.vimrc"
 
 # Setup alias variables
-MAMPSERVE='alias mamp-serve="/Applications/MAMP/bin/start.sh" && echo"Starting Server: 127.0.0.1:8888/MAMP/"'
+MAMPSERVE='alias mamp-serve="/Applications/MAMP/bin/start.sh" && echo"Starting Server: 127.0.0.1:8888/MAMP/" && open http://127.0.0.1:8888/MAMP/'
 MAMPSTOP='alias mamp-stop="/Applications/MAMP/bin/stop.sh"'
 TESTING='alias marco="echo Polo"'
 KILLDS_STORE='alias killds_store="find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch"'
