@@ -1,5 +1,5 @@
-Ignite
-======
+About Ignite
+============
 
 Tiny shell script that sets preferences for VIM, and usefull aliases for BASH and ZSH.
 
