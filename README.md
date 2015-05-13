@@ -11,6 +11,6 @@ Bash/ZSH Commands
 =================
 ##### Start MAMP Server #####
     $ mamp-start
-Mamp starts on: 127.0.0.1:8888/MAMP/
+Mamp starts on: **127.0.0.1:8888/MAMP/**
 ##### Stop MAMP Server #####
     $ mamp-stop  
