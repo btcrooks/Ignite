@@ -16,4 +16,4 @@ MAMP Links
 Start MAMP Server  
     $ mamp-start  
 Stop MAMP Server  
-    $ mamp-stop  
+    "$ mamp-stop"  
