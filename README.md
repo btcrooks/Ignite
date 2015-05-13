@@ -12,11 +12,7 @@ MAMP Links
     Port: **8888**  
     MAMP Home: **127.0.0.1:8888/MAMP/**
 
-**VIM**
->Syntax highlighting.  
->Tab Size = 2.  
-
 **Bash & ZSH**
->Shortcuts to start and stop MAMP.  
+>Start and stop MAMP. 
 >**mamp-serve**  
->**mamp-stop**  
+>**mamp-stop**
