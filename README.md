@@ -13,6 +13,7 @@ MAMP Links
     MAMP Home: **127.0.0.1:8888/MAMP/**
 
 **Bash & ZSH**  
-Start and stop MAMP server: 
->**mamp-serve**  
->**mamp-stop**  
+Start MAMP Server
+    $ mamp-start
+Stop MAMP Server
+    $ mamp-stop
