@@ -7,13 +7,10 @@ Install
 =======
     curl -O https://raw.githubusercontent.com/btcrooks/Ignite/ignite-plus/ignite.sh | sh
 
-MAMP
-==========
-    MAMP Start: 127.0.0.1:8888/MAMP/
-
 Bash/ZSH Commands
 =================
 ##### Start MAMP Server #####
-    $ mamp-start  
+    $ mamp-start
+*Mamp starts on:* 127.0.0.1:8888/MAMP/
 ##### Stop MAMP Server #####
     $ mamp-stop  
