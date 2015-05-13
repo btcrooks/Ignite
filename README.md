@@ -9,8 +9,8 @@ Install
 
 MAMP Links
 ==========
-Port: **8888**  
-MAMP Home: **127.0.0.1:8888/MAMP/**
+    Port: **8888**  
+    MAMP Home: **127.0.0.1:8888/MAMP/**
 
 **VIM**
 >Syntax highlighting.  
