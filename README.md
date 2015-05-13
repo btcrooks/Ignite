@@ -12,7 +12,8 @@ MAMP Links
     Port: **8888**  
     MAMP Home: **127.0.0.1:8888/MAMP/**
 
-### Bash & ZSH ###
+Bash/ZSH Commands
+=================
 ##### Start MAMP Server #####
     $ mamp-start  
 ##### Stop MAMP Server #####
