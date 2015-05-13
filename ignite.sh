@@ -63,4 +63,6 @@ source ~/.bash_profile
 
 ## Let us know when your done & exit
 echo "${green}I'm all done!${nc}"
+# TODO: ask to delete script
+# rm -- "$0"
 exit 0
