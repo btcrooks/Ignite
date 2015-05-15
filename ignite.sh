@@ -28,6 +28,7 @@ else
   MAMPSTOP='alias mamp-serve="echo MAMP is either not installed  or in its
   default location."'
 fi
+# Add iOS Sim shortcuts only if iOS Sim exists
 if [[-d "/Applications/Xcode.app/Contents/Developer/Platforms"]]; then
   LAUNCHIOS='alias launch-ios="open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app"'
 else
