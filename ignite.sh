@@ -28,23 +28,31 @@ else
   MAMPSTOP='alias mamp-serve="echo MAMP is either not installed  or in its
   default location."'
 fi
+if [[-d "/Applications/Xcode.app/Contents/Developer/Platforms"]]; then
+  LAUNCHIOS='alias launch-ios="open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app"'
+else
+  LAUNCHIOS='alias launch-ios="echo Xcode is either not installed  or in its
+  default location."'
+fi
 TESTING='alias marco="echo Polo"'
 
 ## Add shortcuts to .bash_profile
 /bin/cat <<EOF >> $Bash_Profile
 $MAMPSERVE
 $MAMPSTOP
+$LAUNCHIOS
 $TESTING
 EOF
-echo "${yellow}bash shortcuts ready..."
+echo "${yellow}bash shortcuts installed..."
  
 ## Add shortcuts to .zshrc
 /bin/cat <<EOF >> $ZSHRC
 $MAMPSERVE
 $MAMPSTOP
+$LAUNCHIOS
 $TESTING
 EOF
-echo "${yellow}zsh shortcuts ready..."
+echo "${yellow}zsh shortcuts installed..."
  
 ## Setup VIM defaults
 /bin/cat <<EOF >> $VIMRC
