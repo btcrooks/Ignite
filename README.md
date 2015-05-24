@@ -1,7 +1,7 @@
 # Ignite
 Preferences for VIM, and aliases for BASH/ZSH.
 
-#Install  
+##Install  
     curl -O https://raw.githubusercontent.com/btcrooks/Ignite/ignite-plus/ignite.sh | sh
 
 ## VIM
