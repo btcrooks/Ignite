@@ -1,16 +1,15 @@
-Ignite
-======
+# Ignite
 Preferences for VIM, and aliases for BASH/ZSH.
-##VIM
+## VIM
 * Syntax highlighting.  
 * Tab Size = 2.  
 
-##Bash/ZSH  
-#####Start Mamp
+## Bash/ZSH  
+##### Start Mamp
     $ mamp-serve    
-#####Stop Mamp
+##### Stop Mamp
     $ mamp-stop  
 
-##MAMP Links  
-    Port: 8888 
-    MAMP Home: 127.0.0.1:8888/MAMP/
+##MAMP Links 
+##### Mamp Home
+    127.0.0.1:8888/MAMP/
