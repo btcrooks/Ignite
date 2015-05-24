@@ -2,7 +2,7 @@
 Preferences for VIM, and aliases for BASH/ZSH.
 
 ##Install  
-    curl -O https://raw.githubusercontent.com/btcrooks/Ignite/ignite-plus/ignite.sh | sh
+    curl -fsS https://raw.githubusercontent.com/btcrooks/Ignite/ignite-plus/ignite.sh | sh
 
 ## VIM
 * Syntax highlighting.  
