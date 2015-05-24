@@ -5,8 +5,14 @@ Preferences for VIM, and aliases for BASH/ZSH.
 * Syntax highlighting.  
 * Tab Size = 2.  
 
+##Bash/ZSH
+Start MAMP
+   $ **mamp-serve**
+Stop MAMP
+   $ **mamp-stop**
+
 ##Bash & ZSH 
-Shortcuts to start and stop MAMP.  
+Shortcuts to start and stop MAMP.
     **mamp-serve**  
     **mamp-stop**  
 
