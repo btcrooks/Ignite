@@ -7,7 +7,7 @@ Preferences for VIM, and aliases for BASH/ZSH.
 
 ##Bash/ZSH  
 Start MAMP  
-    $ **mamp-serve**  
+     Start
 Stop MAMP  
     $ **mamp-stop**  
 
