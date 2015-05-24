@@ -7,9 +7,9 @@ Preferences for VIM, and aliases for BASH/ZSH.
 
 ##Bash/ZSH  
 Start MAMP  
-   $ **mamp-serve**  
+    $ **mamp-serve**  
 Stop MAMP  
-   $ **mamp-stop**  
+    $ **mamp-stop**  
 
 ##MAMP Links  
     Port: **8888**  
