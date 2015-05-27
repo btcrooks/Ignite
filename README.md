@@ -1,8 +1,11 @@
 # Ignite
 Preferences for VIM, and aliases for BASH/ZSH.
 
-## Install  
-    curl -fsS https://raw.githubusercontent.com/btcrooks/Ignite/ignite-plus/ignite.sh | sh
+## Basic Installation
+#### Via Curl
+`curl -L -fsS https://raw.githubusercontent.com/btcrooks/Ignite/ignite-plus/ignite.sh | sh`
+#### Via wget
+`wget https://raw.githubusercontent.com/btcrooks/Ignite/ignite-plus/ignite.sh | sh`
 
 ## VIM
 * Syntax highlighting.  
@@ -10,10 +13,10 @@ Preferences for VIM, and aliases for BASH/ZSH.
 
 ## Bash/ZSH  
 ##### Start Mamp
-    $ mamp-serve    
+`$ mamp-serve`
 ##### Stop Mamp
-    $ mamp-stop  
+`$ mamp-stop`
 
 ## MAMP Links 
 ##### Mamp Home
-    127.0.0.1:8888/MAMP/
+`127.0.0.1:8888/MAMP/`
