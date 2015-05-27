@@ -1,5 +1,5 @@
 # Ignite
-Preferences for the **vim** editor; aliases for bash and zsh.
+Preferences for the **vim** editor; aliases for **bash** and **zsh**.
 
 ## Basic Installation
 #### Via Curl
