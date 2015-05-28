@@ -3,7 +3,7 @@ Preferences for the **vim** editor; aliases for **bash** and **zsh**.
 
 ## Basic Installation
 #### Via Curl
-`curl -L -fsS https://raw.githubusercontent.com/btcrooks/Ignite/ignite-plus/ignite.sh | sh`
+`curl -fsS https://raw.githubusercontent.com/btcrooks/Ignite/ignite-plus/ignite.sh | sh`
 #### Via wget
 `wget https://raw.githubusercontent.com/btcrooks/Ignite/ignite-plus/ignite.sh | sh`
 
