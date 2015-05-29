@@ -18,15 +18,11 @@ VIMRC="$HOME/.vimrc"
 ## Setup alias variables
 # Add MAMP shortcuts only if MAMP exists
 if [[ -d "/Applications/MAMP" ]]; then
-  MAMPSERVE='alias mamp-serve="/Applications/MAMP/bin/start.sh" &&
-    echo"Starting Server: 127.0.0.1:8888/MAMP/" && open
-    http://127.0.0.1:8888/MAMP/'
+  MAMPSERVE='alias mamp-serve="/Applications/MAMP/bin/start.sh" && echo "Starting Server: 127.0.0.1:8888/MAMP/" && open http://127.0.0.1:8888/MAMP/'
   MAMPSTOP='alias mamp-stop="/Applications/MAMP/bin/stop.sh"'
 else
-  MAMPSERVE='alias mamp-serve="echo MAMP is either not installed or in its
-  default location."'
-  MAMPSTOP='alias mamp-serve="echo MAMP is either not installed  or in its
-  default location."'
+  MAMPSERVE='alias mamp-serve="echo MAMP is either not installed or in its default location."'
+  MAMPSTOP='alias mamp-serve="echo MAMP is either not installed  or in its default location."'
 fi
 # Add iOS Sim shortcuts only if iOS Sim exists
 if [[-d "/Applications/Xcode.app/Contents/Developer/Platforms"]]; then
