@@ -22,7 +22,7 @@ if [[ -d "/Applications/MAMP" ]]; then
   MAMPSTOP='alias mamp-stop="sh /Applications/MAMP/bin/stop.sh"'
 else
   MAMPSERVE='alias mamp-serve="echo MAMP is either not installed or in its default location."'
-  MAMPSTOP='alias mamp-serve="echo MAMP is either not installed  or in its default location."'
+  MAMPSTOP='alias mamp-serve="echo MAMP is either not installed  or in its default location. && echo Stopped Servers"'
 fi
 # Add iOS Sim shortcuts only if iOS Sim exists
 if [[-d "/Applications/Xcode.app/Contents/Developer/Platforms"]]; then
