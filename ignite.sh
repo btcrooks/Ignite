@@ -3,7 +3,8 @@
 # Author: Brandon Crooks
 # Version: 2.1
 # Description: A shell script that sets preferences
-#  for VIM, and aliases for BASH and ZSH. 
+#  for VIM, and aliases for BASH and ZSH.
+#
 #----------Color lib---------------------
 yellow="\033[0;33m"
 green="\033[0;32m"
@@ -14,6 +15,9 @@ nc="\033[0m"
 Bash_Profile="$HOME/.bash_profile"
 ZSHRC="$HOME/.zshrc"
 VIMRC="$HOME/.vimrc"
+
+# TODO: Check if file exist. If they do, rename them to .bash_profile.ignite.bak && echo backup location.
+# Update uninstall to revert back to these files.
 
 ## Setup alias variables
 # Add MAMP shortcuts only if MAMP exists
