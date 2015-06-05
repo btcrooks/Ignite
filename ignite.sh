@@ -15,6 +15,7 @@ nc="\033[0m"
 Bash_Profile="$HOME/.bash_profile"
 ZSHRC="$HOME/.zshrc"
 VIMRC="$HOME/.vimrc"
+LESSFILTER="$HOME/.lessfilter"
 
 # TODO: Check if file exist. If they do, rename them to .bash_profile.ignite.bak && echo backup location.
 # Update uninstall to revert back to these files.
@@ -39,24 +40,31 @@ TESTING='alias marco="echo Polo"'
 
 ## Add shortcuts to .bash_profile
 /bin/cat <<EOF >> $Bash_Profile
+# Ignite settings
 $MAMPSERVE
 $MAMPSTOP
 $LAUNCHIOS
 $TESTING
+export LESS='-R'
+export LESSOPEN='|~/.lessfilter %s'
 EOF
 echo "${yellow}bash shortcuts installed..."
  
 ## Add shortcuts to .zshrc
 /bin/cat <<EOF >> $ZSHRC
+# Ignite Settings
 $MAMPSERVE
 $MAMPSTOP
 $LAUNCHIOS
 $TESTING
+export LESS='-R'
+export LESSOPEN='|~/.lessfilter %s'
 EOF
 echo "${yellow}zsh shortcuts installed..."
  
 ## Setup VIM defaults
 /bin/cat <<EOF >> $VIMRC
+# Ignite vim settings
 syntax on
 set numberwidth=2
 set tabstop=2 
@@ -69,7 +77,30 @@ set relativenumber
 set omnifunc=javascriptcomplete#CompleteJS
 EOF
 echo "${yellow}Vim presets set..."
- 
+
+# Create/Edit .lessfilter
+/bin/cat <<EOF >> $LESSFILTER
+#!/bin/sh
+case "$1" in
+    *.awk|*.groff|*.java|*.js|*.m4|*.php|*.pl|*.pm|*.pod|*.sh|\
+    *.ad[asb]|*.asm|*.inc|*.[ch]|*.[ch]pp|*.[ch]xx|*.cc|*.hh|\
+    *.lsp|*.l|*.pas|*.p|*.xml|*.xps|*.xsl|*.axp|*.ppd|*.pov|\
+    *.diff|*.patch|*.py|*.rb|*.sql|*.ebuild|*.eclass)
+        pygmentize -f 256 "$1";;
+    .bashrc|.bash_aliases|.bash_environment)
+        pygmentize -f 256 -l sh "$1"
+        ;;
+    *)
+        grep "#\!/bin/bash" "$1" > /dev/null
+        if [ "$?" -eq "0" ]; then
+            pygmentize -f 256 -l sh "$1"
+        else
+            exit 1
+        fi
+esac
+exit 0
+EOF
+
 ## Refresh
 sleep 1
 source ~/.bash_profile
