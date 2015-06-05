@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # Author: Brandon Crooks
 # Version: 2.1
@@ -80,7 +80,7 @@ echo "${yellow}Vim presets set..."
 
 # Create/Edit .lessfilter
 /bin/cat <<EOF >> $LESSFILTER
-#!/bin/sh
+#!/bin/bash
 case "$1" in
     *.awk|*.groff|*.java|*.js|*.m4|*.php|*.pl|*.pm|*.pod|*.sh|\
     *.ad[asb]|*.asm|*.inc|*.[ch]|*.[ch]pp|*.[ch]xx|*.cc|*.hh|\
@@ -108,5 +108,11 @@ source ~/.bash_profile
 ## Let us know when your done & exit
 echo "${green}I'm all done!${nc}"
 # TODO: ask to delete script
-# rm -- "$0"
+echo -n "Clean up? (y/n) "
+read CLEANUP
+if [[ $CLEANUP = "y" ]]; then
+  rm -- "$0"
+  echo "Removed ignite.sh"
+else
+  echo "Leaving files in place"
 exit 0
