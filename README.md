@@ -1,16 +1,18 @@
-About Ignite
-============
+# Ignite
+Preferences for the **vim** editor; aliases for **bash** and **zsh**.
 
-Tiny shell script that sets preferences for VIM, and usefull aliases for BASH and ZSH.
+## Basic Installation
+#### Via Curl
+`curl -fsS https://raw.githubusercontent.com/btcrooks/Ignite/ignite-plus/ignite.sh | sh`
+#### Via wget
+`wget https://raw.githubusercontent.com/btcrooks/Ignite/ignite-plus/ignite.sh | sh`
 
-Install
-=======
-    curl -O https://raw.githubusercontent.com/btcrooks/Ignite/ignite-plus/ignite.sh | sh
+## Bash/ZSH  
+##### Start Mamp
+`$ mamp-serve`
+##### Stop Mamp
+`$ mamp-stop`
 
-Bash/ZSH Commands
-=================
-##### Start MAMP Server #####
-    $ mamp-start
-Mamp starts on: **127.0.0.1:8888/MAMP/**
-##### Stop MAMP Server #####
-    $ mamp-stop  
+## MAMP Links 
+##### Mamp Home
+`127.0.0.1:8888/MAMP/`
