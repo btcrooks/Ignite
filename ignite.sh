@@ -2,7 +2,7 @@
 #
 # Author: Brandon Crooks
 # Version: 2.1
-# Description: Simple bash functions and preferences
+# Description: Simple bash functions, preferences
 # for VIM, and aliases for BASH and ZSH.
 #
 #----------Color lib---------------------
@@ -17,11 +17,13 @@ ZSHRC="$HOME/.zshrc"
 VIMRC="$HOME/.vimrc"
 LESSFILTER="$HOME/.lessfilter"
 
-# TODO: Check if file exist. If they do, rename them to .bash_profile.ignite.bak && echo backup location.
-# Update uninstall to revert back to these files.
+# TODO: 
+# - Check if file exist. If they do, rename them to
+# .bash_profile.ignite.bak && echo backup location.
+# - Update uninstall to revert back to these files.
 
-## Setup alias variables
-# Add iOS Sim shortcuts only if iOS Sim exists
+# setup alias variables
+# add iOS Sim shortcuts
 if [[-d "/Applications/Xcode.app/Contents/Developer/Platforms"]]; then
   LAUNCHIOS='alias launch-ios="open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app"'
 else
@@ -30,7 +32,7 @@ else
 fi
 TESTING='alias marco="echo Polo"'
 
-## Add shortcuts to .bash_profile
+# add shortcuts to .bash_profile
 /bin/cat <<EOF >> $Bash_Profile
 # Ignite settings
 $MAMPSERVE
@@ -42,7 +44,7 @@ export LESSOPEN='|~/.lessfilter %s'
 EOF
 echo "${yellow}bash shortcuts installed..."
  
-## Add shortcuts to .zshrc
+# add shortcuts to .zshrc
 /bin/cat <<EOF >> $ZSHRC
 # Ignite Settings
 $MAMPSERVE
@@ -54,7 +56,7 @@ export LESSOPEN='|~/.lessfilter %s'
 EOF
 echo "${yellow}zsh shortcuts installed..."
  
-## Setup VIM defaults
+# setup VIM defaults
 /bin/cat <<EOF >> $VIMRC
 # Ignite vim settings
 syntax on
@@ -70,7 +72,7 @@ set omnifunc=javascriptcomplete#CompleteJS
 EOF
 echo "${yellow}Vim presets set..."
 
-# Create/Edit .lessfilter
+# create/Edit .lessfilter
 /bin/cat <<EOF >> $LESSFILTER
 #!/bin/bash
 case "$1" in
@@ -93,11 +95,11 @@ esac
 exit 0
 EOF
 
-## Refresh
+# refresh
 sleep 1
 source ~/.bash_profile
 
-## Let us know when your done & exit
+# let us know when your done & exit
 echo "${green}I'm all done!${nc}"
 # TODO: ask to delete script
 echo -n "Clean up? (y/n) "
