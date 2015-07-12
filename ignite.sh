@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # Author: Brandon Crooks
 # Version: 2.1
-# Description: A shell script that sets preferences
-#  for VIM, and aliases for BASH and ZSH.
+# Description: Simple bash functions and preferences
+# for VIM, and aliases for BASH and ZSH.
 #
 #----------Color lib---------------------
 yellow="\033[0;33m"
