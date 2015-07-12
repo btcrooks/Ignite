@@ -21,14 +21,6 @@ LESSFILTER="$HOME/.lessfilter"
 # Update uninstall to revert back to these files.
 
 ## Setup alias variables
-# Add MAMP shortcuts only if MAMP exists
-if [[ -d "/Applications/MAMP" ]]; then
-  MAMPSERVE='alias mamp-serve="sh /Applications/MAMP/bin/start.sh && echo Starting Server: 127.0.0.1:8888/MAMP/ && open http://127.0.0.1:8888/MAMP/"'
-  MAMPSTOP='alias mamp-stop="sh /Applications/MAMP/bin/stop.sh"'
-else
-  MAMPSERVE='alias mamp-serve="echo MAMP is either not installed or in its default location."'
-  MAMPSTOP='alias mamp-serve="echo MAMP is either not installed  or in its default location. && echo Stopped Servers"'
-fi
 # Add iOS Sim shortcuts only if iOS Sim exists
 if [[-d "/Applications/Xcode.app/Contents/Developer/Platforms"]]; then
   LAUNCHIOS='alias launch-ios="open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app"'
