@@ -40,7 +40,7 @@ TESTING='alias marco="echo Polo"'
 
 ## Add shortcuts to .bash_profile
 /bin/cat <<EOF >> $Bash_Profile
-# Ignite settings
+" Ignite settings
 $MAMPSERVE
 $MAMPSTOP
 $LAUNCHIOS
@@ -52,7 +52,7 @@ echo "${yellow}bash shortcuts installed..."
  
 ## Add shortcuts to .zshrc
 /bin/cat <<EOF >> $ZSHRC
-# Ignite Settings
+" Ignite Settings
 $MAMPSERVE
 $MAMPSTOP
 $LAUNCHIOS
@@ -64,7 +64,7 @@ echo "${yellow}zsh shortcuts installed..."
  
 ## Setup VIM defaults
 /bin/cat <<EOF >> $VIMRC
-# Ignite vim settings
+" Ignite vim settings
 syntax on
 set numberwidth=2
 set tabstop=2 
