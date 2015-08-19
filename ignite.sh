@@ -58,7 +58,7 @@ echo "${yellow}zsh shortcuts installed..."
  
 ## Setup VIM defaults
 /bin/cat <<EOF >> $VIMRC
-# Ignite vim settings
+" Ignite vim settings
 syntax on
 set numberwidth=2
 set tabstop=2 
