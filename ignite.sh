@@ -29,18 +29,12 @@ else
   MAMPSERVE='alias mamp-serve="echo MAMP is either not installed or in its default location."'
   MAMPSTOP='alias mamp-serve="echo MAMP is either not installed  or in its default location. && echo Stopped Servers"'
 fi
-# Add iOS Sim shortcuts only if iOS Sim exists
-if [[-d "/Applications/Xcode.app/Contents/Developer/Platforms"]]; then
-  LAUNCHIOS='alias launch-ios="open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app"'
-else
-  LAUNCHIOS='alias launch-ios="echo Xcode is either not installed  or in its
-  default location."'
-fi
+
 TESTING='alias marco="echo Polo"'
 
 ## Add shortcuts to .bash_profile
 /bin/cat <<EOF >> $Bash_Profile
-" Ignite settings
+# Ignite settings
 $MAMPSERVE
 $MAMPSTOP
 $LAUNCHIOS
@@ -52,7 +46,7 @@ echo "${yellow}bash shortcuts installed..."
  
 ## Add shortcuts to .zshrc
 /bin/cat <<EOF >> $ZSHRC
-" Ignite Settings
+# Ignite Settings
 $MAMPSERVE
 $MAMPSTOP
 $LAUNCHIOS
@@ -64,7 +58,7 @@ echo "${yellow}zsh shortcuts installed..."
  
 ## Setup VIM defaults
 /bin/cat <<EOF >> $VIMRC
-" Ignite vim settings
+# Ignite vim settings
 syntax on
 set numberwidth=2
 set tabstop=2 
