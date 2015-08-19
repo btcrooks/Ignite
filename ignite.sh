@@ -101,12 +101,4 @@ source ~/.bash_profile
 
 ## Let us know when your done & exit
 echo "${green}I'm all done!${nc}"
-# TODO: ask to delete script
-echo -n "Clean up? (y/n) "
-read CLEANUP
-if [[ $CLEANUP = "y" ]]; then
-  rm -- "$0"
-  echo "Removed ignite.sh"
-else
-  echo "Leaving files in place"
 exit 0
