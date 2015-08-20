@@ -6,16 +6,16 @@
 #  for VIM, and aliases for BASH and ZSH.
 #
 #----------Color lib---------------------
-yellow="\033[0;33m"
-green="\033[0;32m"
-nc="\033[0m"
+declare -r yellow="\033[0;33m"
+declare -r green="\033[0;32m"
+declare -r nc="\033[0m"
 #----------------------------------------
 
 # Setup file paths
-Bash_Profile="$HOME/.bash_profile"
-ZSHRC="$HOME/.zshrc"
-VIMRC="$HOME/.vimrc"
-LESSFILTER="$HOME/.lessfilter"
+declare -r Bash_Profile="$HOME/.bash_profile"
+declare -r ZSHRC="$HOME/.zshrc"
+declare -r VIMRC="$HOME/.vimrc"
+declare -r LESSFILTER="$HOME/.lessfilter"
 
 # TODO: Check if file exist. If they do, rename them to .bash_profile.ignite.bak && echo backup location.
 # Update uninstall to revert back to these files.
