@@ -3,7 +3,7 @@
 # Author: Brandon Crooks
 # Version: 2.2
 # Description: Simple bash functions, preferences
-# for VIM, and aliases for BASH and ZSH.
+# for VIM, and helpful aliases for BASH and ZSH.
 #
 #----------Color lib---------------------
 yellow="\033[0;33m"
