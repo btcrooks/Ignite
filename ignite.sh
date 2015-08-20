@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # Author: Brandon Crooks
-# Version: 2.1
+# Version: 2.2
 # Description: Simple bash functions, preferences
 # for VIM, and aliases for BASH and ZSH.
 #
@@ -87,7 +87,7 @@ esac
 exit 0
 EOF
 
-# refresh
+# give it a sec and refresh
 sleep 1
 source ~/.bash_profile
 
