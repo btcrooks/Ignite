@@ -22,14 +22,6 @@ LESSFILTER="$HOME/.lessfilter"
 # .bash_profile.ignite.bak && echo backup location.
 # - Update uninstall to revert back to these files.
 
-# setup alias variables
-# add iOS Sim shortcuts
-if [[-d "/Applications/Xcode.app/Contents/Developer/Platforms"]]; then
-  LAUNCHIOS='alias launch-ios="open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app"'
-else
-  LAUNCHIOS='alias launch-ios="echo Xcode is either not installed  or in its
-  default location."'
-fi
 TESTING='alias marco="echo Polo"'
 
 # add shortcuts to .bash_profile
