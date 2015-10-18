@@ -9,6 +9,9 @@
 yellow="\033[0;33m"
 green="\033[0;32m"
 nc="\033[0m"
+green() { printf "\033[32m${1}\033[0m\n"; }
+yellow() { printf "\033[33m${1}\033[0m\n"; }
+red() { printf "\033[31m${1}\033[0m\n"; }
 #----------------------------------------
 
 # Setup file paths
@@ -17,7 +20,7 @@ ZSHRC="$HOME/.zshrc"
 VIMRC="$HOME/.vimrc"
 LESSFILTER="$HOME/.lessfilter"
 
-# TODO: 
+# TODO:
 # - Check if file exist. If they do, rename them to
 # .bash_profile.ignite.bak && echo backup location.
 # - Update uninstall to revert back to these files.
@@ -34,8 +37,8 @@ $TESTING
 export LESS='-R'
 export LESSOPEN='|~/.lessfilter %s'
 EOF
-echo "${yellow}bash shortcuts installed..."
- 
+yellow "bash shortcuts installed..."
+
 # add shortcuts to .zshrc
 /bin/cat <<EOF >> $ZSHRC
 # Ignite Settings
@@ -46,15 +49,15 @@ $TESTING
 export LESS='-R'
 export LESSOPEN='|~/.lessfilter %s'
 EOF
-echo "${yellow}zsh shortcuts installed..."
- 
+yellow "zsh shortcuts installed..."
+
 # setup VIM defaults
 /bin/cat <<EOF >> $VIMRC
 # Ignite vim settings
 syntax on
 set numberwidth=2
-set tabstop=2 
-set shiftwidth=2 
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set softtabstop=2
 set shiftround
@@ -62,7 +65,7 @@ set autoindent
 set relativenumber
 set omnifunc=javascriptcomplete#CompleteJS
 EOF
-echo "${yellow}Vim presets set..."
+yellow "Vim presets set..."
 
 # create/Edit .lessfilter
 /bin/cat <<EOF >> $LESSFILTER
@@ -92,5 +95,5 @@ sleep 1
 source ~/.bash_profile
 
 # let us know when your done & exit
-echo "${green}I'm all done!${nc}"
+green "I'm all done!"
 exit 0
