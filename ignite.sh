@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # @author: Brandon Crooks
-# @version: 2.2
+# @version: 1.5
 #
 # Description: Simple bash functions, preferences
 # for VIM, and helpful aliases for BASH and ZSH.
