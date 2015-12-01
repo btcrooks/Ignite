@@ -6,7 +6,7 @@
 # Description: Simple bash functions, preferences
 # for VIM, and helpful aliases for BASH and ZSH.
 #
-#
+
 #----------Color lib---------------------
 # yellow="\033[0;33m"
 # green="\033[0;32m"
