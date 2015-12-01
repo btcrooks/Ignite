@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
 #
-# Author: Brandon Crooks
-# Version: 2.2
+# @author: Brandon Crooks
+# @version: 2.2
+#
 # Description: Simple bash functions, preferences
 # for VIM, and helpful aliases for BASH and ZSH.
 #
+#
 #----------Color lib---------------------
-yellow="\033[0;33m"
-green="\033[0;32m"
-nc="\033[0m"
+# yellow="\033[0;33m"
+# green="\033[0;32m"
+# nc="\033[0m"
 green() { printf "\033[32m${1}\033[0m\n"; }
 yellow() { printf "\033[33m${1}\033[0m\n"; }
 red() { printf "\033[31m${1}\033[0m\n"; }
@@ -26,12 +28,10 @@ LESSFILTER="$HOME/.lessfilter"
 # - Update uninstall to revert back to these files.
 
 TESTING='alias marco="echo Polo"'
-<<<<<<< HEAD
-##KILLDS_STORE='alias killds_store="find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch"'
-=======
->>>>>>> ignite-plus
 
-# add shortcuts to .bash_profile
+#----------------------------------------
+# .bash_profile
+#----------------------------------------
 /bin/cat <<EOF >> $Bash_Profile
 # Ignite settings
 $MAMPSERVE
@@ -43,7 +43,9 @@ export LESSOPEN='|~/.lessfilter %s'
 EOF
 yellow "bash shortcuts installed..."
 
-# add shortcuts to .zshrc
+#----------------------------------------
+# .zshrc
+#----------------------------------------
 /bin/cat <<EOF >> $ZSHRC
 # Ignite Settings
 $MAMPSERVE
@@ -55,7 +57,9 @@ export LESSOPEN='|~/.lessfilter %s'
 EOF
 yellow "zsh shortcuts installed..."
 
-# setup VIM defaults
+#----------------------------------------
+# VIM
+#----------------------------------------
 /bin/cat <<EOF >> $VIMRC
 # Ignite vim settings
 syntax on
@@ -63,15 +67,6 @@ set numberwidth=2
 set tabstop=2
 set shiftwidth=2
 set expandtab
-<<<<<<< HEAD
-END
-echo "${yellow}Vim presets set..."
- 
-# Let us know when your done
-echo "${green}I'm all done!${nc}"
-# Refresh bash
-. ~/.bash_profile
-=======
 set softtabstop=2
 set shiftround
 set autoindent
@@ -80,7 +75,9 @@ set omnifunc=javascriptcomplete#CompleteJS
 EOF
 yellow "Vim presets set..."
 
+#----------------------------------------
 # create/Edit .lessfilter
+#----------------------------------------
 /bin/cat <<EOF >> $LESSFILTER
 #!/bin/bash
 case "$1" in
@@ -110,4 +107,3 @@ source ~/.bash_profile
 # let us know when your done & exit
 green "I'm all done!"
 exit 0
->>>>>>> ignite-plus
